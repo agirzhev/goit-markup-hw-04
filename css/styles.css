@@ -137,9 +137,15 @@ body {
 /* --------------------------------HERO-------------------------------- */
 
 .hero {
+  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--header-background-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
