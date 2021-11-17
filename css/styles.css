@@ -48,6 +48,11 @@ body {
   text-align: center;
   /* outline: 2px solid red; */
 }
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* --------------------------------HEADER-------------------------------- */
 
 /* web studio */
@@ -201,10 +206,10 @@ body {
 
 /* --------------------------------COMPANY-------------------------------- */
 
-.company {
+/* .company {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+} */
 
 .company-list {
   display: flex;
@@ -265,9 +270,9 @@ body {
 }
 /* --------------------------------PICHERS-------------------------------- */
 
-.pichers {
+/* .pichers {
   padding-bottom: 94px;
-}
+} */
 
 .pichers-title {
   margin: 0;
@@ -296,8 +301,8 @@ body {
 
 /* --------------------------------TEAM-------------------------------- */
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  /* padding-top: 94px;
+  padding-bottom: 94px; */
   background-color: var(--section-background-color);
 }
 
@@ -336,7 +341,7 @@ body {
   width: 44px;
   height: 44px;
   margin-top: 16px;
-  margin-right: 20px;
+  margin-right: 10px;
   background-image: url(../images/instagram.svg);
 }
 
@@ -346,6 +351,7 @@ body {
   width: 44px;
   height: 44px;
   margin-top: 16px;
+  margin-right: 10px;
   background-image: url(../images/twiter.svg);
 }
 
@@ -355,8 +361,19 @@ body {
   width: 44px;
   height: 44px;
   margin-top: 16px;
+  margin-right: 10px;
   background-image: url(../images/facebook.svg);
 }
+
+.icon-linkedin {
+  content: '';
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  margin-top: 16px;
+  background-image: url(../images/linkedin.svg);
+}
+
 .team-item {
   margin: 0;
   padding: 0;
@@ -368,14 +385,6 @@ body {
   color: var(--primery-text-color);
 }
 
-.icon-linkedin {
-  content: '';
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-  margin-top: 16px;
-  background-image: url(../images/linkedin.svg);
-}
 .team-item {
   margin: 0;
   padding: 0;
@@ -409,8 +418,8 @@ body {
 /* --------------------------------PARTNERS-------------------------------- */
 
 .partners {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  /* padding-top: 94px;
+  padding-bottom: 94px; */
 }
 
 .partners-title {
@@ -454,6 +463,7 @@ body {
 }
 
 .footer-container {
+  /* width: 70px; */
   text-align: left;
 }
 
@@ -477,6 +487,7 @@ body {
 }
 
 .footer-address {
+  width: 231px;
   margin-top: 20px;
   font-style: normal;
   font-weight: 400;
@@ -493,6 +504,18 @@ body {
   letter-spacing: 0.03em;
   color: var(--footer-text-color);
   text-decoration: none;
+}
+
+.conect {
+  margin: 0;
+  padding: 0;
+  /* padding-bottom: 72px; */
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primery-background-color);
 }
 
 /* .footer-link-email {
@@ -549,8 +572,8 @@ body {
 /* --------------------------------PORTFOLIO-------------------------------- */
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  /* padding-top: 94px;
+  padding-bottom: 94px; */
 }
 
 .portfolio-list {
