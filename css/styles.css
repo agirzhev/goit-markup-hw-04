@@ -108,18 +108,6 @@ body {
   padding-left: 50px;
 }
 
-.icon-email {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  /* background-image: url(../images/email.svg); */
-}
-
-.icon-phone {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-}
 .header-portfolio {
   border-bottom: 1px solid var(--line-fist-color);
 }
@@ -152,6 +140,30 @@ body {
 }
 .site-nav-list {
   display: flex;
+}
+
+.icon-email {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-email:hover,
+.icon-email:focus {
+  fill: var(--secondary-text-color);
+}
+
+.icon-phone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-phone:hover,
+.icon-phone:focus {
+  fill: var(--secondary-text-color);
 }
 
 /* --------------------------------HERO-------------------------------- */
@@ -366,17 +378,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 .team-social-icon {
   width: 44px;
   height: 44px;
+  fill: currentColor;
 }
 
 .team-social-icon:not(:first-child) {
   margin-left: 10px;
 }
 
+.team-social-icon:hover,
+.team-social-icon:focus {
+  fill: var(--secondary-text-color);
+}
 /* --------------------------------PARTNERS-------------------------------- */
 
 .partners-title {
