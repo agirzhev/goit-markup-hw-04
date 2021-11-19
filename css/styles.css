@@ -112,10 +112,6 @@ body {
   border-bottom: 1px solid var(--line-fist-color);
 }
 
-/* .icom-email::before {
-  background-image: url(../images/emailhover.svg);
-  
-} */
 /* --------------------------------NAV-------------------------------- */
 
 .site-nav-link {
@@ -368,7 +364,7 @@ body {
   margin-bottom: 30px;
 }
 
-.team-social {
+.team-social-list {
   margin: 0;
   padding: 0;
   margin-left: 32px;
@@ -378,22 +374,37 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
 }
 
-.team-social-icon {
+.team-social-item {
   width: 44px;
   height: 44px;
-  fill: currentColor;
 }
 
-.team-social-icon:not(:first-child) {
+.team-social-item:not(:first-child) {
   margin-left: 10px;
 }
 
-.team-social-icon:hover,
-.team-social-icon:focus {
-  fill: var(--secondary-text-color);
+.team-social-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--border-first-color);
+  border-radius: 50%;
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--secondary-text-color);
+  color: var(--primery-background-color);
+}
+
+.team-social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 /* --------------------------------PARTNERS-------------------------------- */
 
@@ -417,6 +428,7 @@ body {
   display: inline-flex;
   width: 170px;
   height: 92px;
+  color: var(--border-first-color);
   border: 1px solid var(--border-first-color);
   box-sizing: border-box;
   border-radius: 4px;
@@ -427,9 +439,17 @@ body {
   margin-left: 30px;
 }
 
+.partners-list-item:hover,
+.partners-list-item:focus {
+  color: var(--secondary-text-color);
+  border: 1px solid var(--secondary-text-color);
+  cursor: pointer;
+}
+
 .partners-logo {
   width: 106px;
   height: 60px;
+  fill: currentColor;
 }
 
 /* --------------------------------FOOTER-------------------------------- */
@@ -518,6 +538,48 @@ body {
 .conect-title {
   margin-bottom: 20px;
 }
+
+.conect-social-list {
+  margin: 0;
+  padding: 0;
+  width: 206px;
+  height: 44px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.conect-social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.conect-social-item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.conect-social-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--border-first-color);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.conect-social-link:hover,
+.conect-social-link:focus {
+  background-color: var(--secondary-text-color);
+  color: var(--primery-background-color);
+}
+
+.conect-social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
 /* ----------------------------------------------------------------PORTFOLIO---------------------------------------------------------------- */
 
 /* --------------------------------FILTERS-------------------------------- */
@@ -540,9 +602,6 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   border-radius: 4px;
-  cursor: pointer;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-color: transparent;
 }
 
@@ -559,6 +618,9 @@ body {
 .filters-item :focus {
   background-color: var(--secondary-text-color);
   color: var(--primery-background-color);
+  cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* --------------------------------PORTFOLIO-------------------------------- */
@@ -575,9 +637,6 @@ body {
   height: 404px;
   background: var(--primery-background-color);
   border: 1px solid var(--line-second-color);
-  /* box-sizing: border-box; */
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-item:nth-child(3n + 1) {
@@ -586,6 +645,13 @@ body {
 
 .portfolio-item:nth-last-child(-n + 3) {
   margin-bottom: 0px;
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-title {
