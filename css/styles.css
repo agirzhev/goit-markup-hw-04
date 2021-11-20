@@ -57,7 +57,7 @@ body {
 
 /* web studio */
 .header-logo {
-  margin-right: 93px;
+  /* margin-right: 93px; */
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -133,8 +133,10 @@ body {
 .site-nav-link:focus {
   color: var(--secondary-text-color);
   text-decoration: none;
+  tab-size: 1;
 }
 .site-nav-list {
+  margin-left: 93px;
   display: flex;
 }
 
@@ -169,8 +171,8 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--header-background-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-  background-image: url(../images/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -314,7 +316,6 @@ body {
 
 .team-list-item {
   width: 270px;
-  height: 468px;
   background: var(--primery-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -369,6 +370,7 @@ body {
   padding: 0;
   margin-left: 32px;
   margin-right: -10px;
+  margin-bottom: 30px;
   width: 206px;
   height: 44px;
   display: flex;
@@ -446,10 +448,28 @@ body {
   cursor: pointer;
 }
 
+.partners-link {
+  fill: currentColor;
+  /* color: var(--border-first-color); */
+  color: currentColor;
+}
+
+.partners-link:hover,
+.partners-link:focus {
+  color: var(--secondary-text-color);
+  cursor: pointer;
+}
+
 .partners-logo {
+  fill: currentColor;
   width: 106px;
   height: 60px;
-  fill: currentColor;
+}
+
+.partners-logo:hover,
+.partners-logo:focus {
+  fill: var(--secondary-text-color);
+  cursor: pointer;
 }
 
 /* --------------------------------FOOTER-------------------------------- */
@@ -460,6 +480,9 @@ body {
   background-color: var(--header-background-color);
 }
 
+.footer-section {
+  display: flex;
+}
 .footer-contacts {
   margin: 0;
   padding: 0;
