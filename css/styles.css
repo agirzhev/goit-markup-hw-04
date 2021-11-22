@@ -560,17 +560,19 @@ body {
   margin: 0;
   padding: 0;
   margin-left: 70px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primery-background-color);
-  text-align: left;
 }
 
 .conect-title {
+  width: 145px;
+  height: 16px;
   margin-bottom: 20px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primery-background-color);
 }
 
 .conect-social-list {
